@@ -1,0 +1,7 @@
+.navbar-default {
+    background-color: rgba(68, 193, 230, 0.84);
+   }
+
+.navbar-default .navbar-nav>li>a {
+      color: #efe2e2;
+ }

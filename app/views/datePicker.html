@@ -1,0 +1,51 @@
+<body ng-controller="datePickerController">
+    <center>
+        <h2>Angular Js Date Picker</h2>
+      </center>
+  
+    <hr>
+      
+   <div style="justify-content:center;" >   
+      <form name="form">
+         <div class="row" style="margin-top: 50px;">
+          <div class="col-lg-6 col-md-6 col-sm-6" >       
+        <!-- <div id="p1"> -->
+        <div id ="p1">
+         <b>From :</b> 
+         <span class="redStar">*</span>
+         
+        <input type="text"  datepicker-popup="MM/dd/yyyy" required ng-model="data.fromDate" name="fromDate" ng-pattern="^(0?[1-9]|1[0-2])\/(0?[1-9]|1\d|2\d|3[01])\/(19|20)\d{2}$"  style="margin-left: 20px;" ng-pattern-restrict="^[0-9/]*$"   placeholder="mm/dd/yyyy" min="'01/01/2000'" max="'12/31/2999'"/>
+        <span style="color:#ff0000"  class="ng-hide"  ng-show="form.fromDate.$dirty && form.fromDate.$invalid" ng-if="!form.fromDate.$untouched" >   
+          Enter From Date in MM/DD/YYYY
+         </span>  
+         
+        </div> 
+  
+      </div>
+    
+      <div class="col-lg-6 col-md-6 col-sm-6" >   
+      <!-- <div id="p2"> -->
+        <p>
+          <b>To :</b>
+          <span class="redStar">*</span>
+        <input type="text" datepicker-popup="MM/dd/yyyy" required ng-model="data.toDate" date-after="data.fromDate" name="toDate" ng-pattern="^(0?[1-9]|1[0-2])\/(0?[1-9]|1\d|2\d|3[01])\/(19|20)\d{2}$" style="margin-left: 20px;" ng-pattern-restrict="^[0-9/]*$" placeholder="mm/dd/yyyy" min="'01/01/2000'" max="'12/31/2999'" />
+  
+      
+        
+        <span  style="color:red" ng-show="form.toDate.$dirty && form.toDate.$invalid"  ng-if="!form.toDate.$error.dateAfter" class="ng-hide" ng-if="!form.toDate.$untouched">   
+          Enter To Date in MM/DD/YYYY
+         </span>  
+        
+        <span ng-show="form.toDate.$error.dateAfter" class="error" style="margin-left: 5px;" >To Date should be greater than From Date!</span>
+        
+  
+        </p>
+      </div>
+  
+      </div>
+  
+   
+      </form>
+      
+    </div>  
+</body>

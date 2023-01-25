@@ -1,0 +1,31 @@
+/* Styles go here */
+
+body {
+    padding: 10px;
+  }
+  
+  .error {
+    color: red;
+  }
+  #p1 {
+    display:inline-block ;
+    /* margin-right:10px; */
+    /* margin-left: 10px; */
+  } 
+  #p2 {
+    display:inline-block;
+    margin-left: 200px;
+  } 
+  .parent{
+    margin-top: 100px;
+    margin-left: 25px;
+  }
+  .redStar {
+      color: red;
+      margin-left: 3px;
+      padding-right: 3px;
+  }
+  .form-inline{
+    display:inline-block;
+    width: auto;
+  }

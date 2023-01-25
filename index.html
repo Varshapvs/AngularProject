@@ -1,0 +1,102 @@
+<!doctype html>
+<html ng-app="datatableApp">
+<head>
+    <title>Iterating Over Data</title>
+    <link rel="stylesheet" src="node_modules/@fortawesome/fontawesome-free/css.all.css">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+    <link href="styles/multiSelectStyle.css" rel="stylesheet" type="text/css" />
+    <link href="styles/datePickerStyle.css" rel="stylesheet" type="text/css" />
+    <link href="styles/menuStyle.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.datatables.net/r/bs-3.3.5/jq-2.1.4,dt-1.10.8/datatables.min.css" rel="stylesheet">
+    <link href="node_modules\js-treeview\dist\treeview.min.css" rel="stylesheet"></link>
+    <link data-require="bootstrap-css@*" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+
+
+    <!-- <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.6.0.js"></script> -->
+    <!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+     -->
+     <style type="text/css">
+      .navbar-default {
+        background-color: rgba(68, 193, 230, 0.84);
+       }
+       .navbar-default .navbar-nav>li>a {
+          color: #efe2e2;
+     }
+    
+    </style>
+</head>
+<body>
+     <div id="size">
+      <div class="navbar navbar-default navbar-fixed-left">
+        <!-- <div class="container navbar-leftmr"> -->
+          <div class="navbar-collapse collapse " id="navbar-main">
+    
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#!/treeView"> Tree View </a>
+              </li>
+               <li class="dropdown">
+                <a href="#!/"> Data Table</a>
+              </li>
+               <li class="dropdown">
+                <a href="#!/modalView">Modal View</a>
+              </li>
+              <li class="dropdown">
+                <a href="#!/multiselect">MultiSelect</a>
+              </li>
+              <li class="dropdown">
+                <a href="#!/autoComplete">Auto Complete</a>
+              </li>
+              <li class="dropdown">
+                <a href="#!/datePicker">Date Picker</a>
+              </li>
+          </div>
+
+        </div>
+
+      </div>
+
+    <!-- </div> -->
+
+    <div ng-view></div>
+
+
+    <script src="scripts/angular-1.6.6/angular.min.js"></script>
+    <script src="scripts/angular-1.6.6/angular-animate.min.js"></script>
+    <script src="scripts/angular-1.6.6/angular-touch.min.js"></script>
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-route.js"></script>
+    <script src="scripts/angularjs-datatables.js"></script>
+    <script src="scripts/angular.treeview.js"></script>
+    <script src="scripts/ng-pattern-restrict.js"></script>
+    <script src="scripts/angular-messages.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/controllers/datatableController.js"></script>
+    <script src="app/controllers/treeViewController.js"></script>
+    <script src="app/controllers/modalView.js"></script>
+    <script src="app/controllers/modelHandlerController.js"></script>
+    <script src="app/controllers/autoCompleteController.js"></script>
+    <script src="app/controllers/multiSelectController.js"></script>
+    <script src="app/controllers/datePickerController.js"></script>
+    <script src="scripts/bootstrap-datepicker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js" integrity="sha256-zBy1l2WBAh2vPF8rnjFMUXujsfkKjya0Jy5j6yKj0+Q="
+        crossorigin="anonymous"></script>
+    <script src="node_modules\xlsx-js-style\dist\xlsx.bundle.js"></script>
+
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.2.4.js"></script>
+
+    <!-- <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.0.min.js"></script> -->
+    
+    <!--This ui-bootstrap-tpls-0.6.0.js  can be removed for the working of model popup-->
+
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.6.0.js"></script>
+    
+    <!-- <script src="node_modules\js-treeview\dist\treeview.min.js"></script> -->  
+     
+</body>
+</html>
+
+
